@@ -31,7 +31,6 @@ function App() {
       const task = {
         title: newTodo,
         category: selectedCategory,
-        completed: booleanValue,
         id: count,
       };
       setCount(count + 1);
@@ -75,10 +74,7 @@ function App() {
             {filterTodo.map((el) => (
               <li key={el.id} className="list">
                 <div className="just-box">
-                  <button
-                    onClick={() => handleMarkedTodo(!setBooleanValue)}
-                    className="mark"
-                  ></button>
+                  <button className="mark"></button>
                   <p>
                     {el.title}
                     <span className="category-title">{el.category}</span>
