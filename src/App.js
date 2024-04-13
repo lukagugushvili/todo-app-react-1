@@ -1,6 +1,5 @@
 import { useState } from "react";
 import deleteIcon from "./assets/delete.SVG";
-import { type } from "@testing-library/user-event/dist/type";
 
 function App() {
   const [categories, setCategories] = useState([
@@ -84,7 +83,7 @@ function App() {
                   className="delete-btn"
                   onClick={() => deleteTodo(el.id)}
                 >
-                  <img src={deleteIcon} />
+                  <img src={deleteIcon} alt="delete-icon" />
                 </button>
               </li>
             ))}
